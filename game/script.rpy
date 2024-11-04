@@ -20,15 +20,15 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    j "Hi WA! This is the half draft!"
+    p "HI my dear partener! "
 
-    j "This will be the software framework \for my TIP assignment"
+    p "It's known to all that our campus has the state-of-art \basic infrustructure in China..."
 
-    j "Everything happens next is just a \test for the framework..."
+    p "...so maybe it will surprise you a little bit if I tell you that "
 
-    j "...and the content have nothing to do with the assignment."
+    p "...and the content have nothing to do with the assignment."
 
-    j "So forgive me if something non-sense bumps up..."
+    p "So forgive me if something non-sense bumps up..."
 
     scene bg room
 
