@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Cited URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10971579/
 
@@ -123,9 +123,9 @@ label readArticle:
 
     p "...published PLOS ONE."
 
-    P "It focuses on the respiratory issues and psychological\ effects caused by organic waste odors."
+    p "It focuses on the respiratory issues and psychological\ effects caused by organic waste odors."
 
-    P "The study examined data from 32 different communities\ across 12 countries, and here are their findings:"
+    p "The study examined data from 32 different communities\ across 12 countries, and here are their findings:"
 
     p "First, there is a positive connection between organic\ waste emissions and the damage of human health..."
 
@@ -188,7 +188,7 @@ label solution0:
 
     p "Where does these cardboard paper boxes come from? Postal services clearly."
 
-    P "We all know that there is a recycling spot in the postal service spot of our campus..."
+    p "We all know that there is a recycling spot in the postal service spot of our campus..."
 
     p "...So why would anyone be bothered to take the boxes\ back to the domitory instead of just putting them at the recycling spot?"
 

@@ -1,16 +1,16 @@
-2024-11-04 13:05:03 UTC
+2024-11-04 17:46:53 UTC
 Linux-6.8.0-48-generic-x86_64-with-glibc2.39
 Ren'Py 8.3.2.24090902
 
 Early init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.36s
+Loading error handling took 0.01s
+Loading script took 0.05s
 Loading save slot metadata took 0.01s
 Loading persistent took 0.00s
-Running init code took 0.03s
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.00s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
 Backing up script files to '/home/patrick/.renpy/backups/the_invisible_problem':
 Dump and make backups took 0.02s
@@ -29,7 +29,7 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 3072, 1728)
@@ -41,3 +41,19 @@ Version: b'4.6 (Compatibility Profile) Mesa 24.2.0-devel'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1948, 1096) drawable=(1948, 1096)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 191, in script
+    P "We all know that there is a recycling spot in the postal service spot of our campus..."
+  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 2573, in execute
+    Say.execute(self)
+  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'P' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 191, in script
+    P "We all know that there is a recycling spot in the postal service spot of our campus..."
+Exception: Sayer 'P' is not defined.
