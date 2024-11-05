@@ -7,13 +7,12 @@
 
 define n = Character("Nie")
 define p = Character("Patrick")
-
-#TODO: create a jump menu so that our deer F can get his thesis quickly
 # The game starts here.
 
-label seeThesis:
+label start:
 
     "Do you want to see my thesis first?"
+
 
 menu ifSeeThesis:
 
@@ -21,10 +20,10 @@ menu ifSeeThesis:
         jump thesis
 
     "No, I need to go through the whole thing":
-        jump start
+        jump intro
 
 
-label start:
+label intro:
 
     scene intro room
 
@@ -148,7 +147,6 @@ label readArticle:
     p "...on a stressful university student with tight time scheduals"
 
 
-
 label possibleSolution:
 
     scene uncleaned corridor
@@ -255,18 +253,30 @@ label solution2:
 
     p "You see? That's how we will solve the problem"
 
-
     jump thesis
 
 
 label thesis:
     #TODO: a picture of RC-101 here.
-    #TODO: insert your problem & thesis here 
 
     scene RC 101
 
-    p ""
+    p "OK here we are."
 
-    "...so he can focus on his project now."
+    p "We should now have a face to face discussion with Students' union of our College..."
+
+    p "...to persuade them into setting up more recycling points..."
+
+    p "...in which students' large carpel boxes are gathered, compressed and recycled,..."
+
+    p "...so that there won't be more nasty smells produced by overwhelmed dustbin in the college"
+
+    n "But why would the students' union even care about this problem? Is there any exigency?"
+
+    p "Of course. First, if they choose to ignore the problem, not only will the residents of our college..."
+
+    p "...but also will damage their image among the students."
+
+    p "On the other hand, if they choose to solve this problem, they\ will manage to do something and gain a good reputation!"
 
     return
