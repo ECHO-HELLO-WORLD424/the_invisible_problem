@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 191, in script
-    P "We all know that there is a recycling spot in the postal service spot of our campus..."
-Exception: Sayer 'P' is not defined.
+  File "game/script.rpy", line 95, in script
+    scene cover paper@0.75
+Exception: Image 'cover paper' does not accept attributes '@0.75'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 191, in script
-    P "We all know that there is a recycling spot in the postal service spot of our campus..."
-  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 2573, in execute
-    Say.execute(self)
-  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/home/patrick/application/renpy-8.3.2-sdk/renpy/ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'P' is not defined.
+  File "game/script.rpy", line 95, in script
+    scene cover paper@0.75
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/ast.py", line 1245, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/exports/displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/display/displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "/Users/maoxinchen/renpy-8.3.2-sdk/renpy/display/displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'cover paper' does not accept attributes '@0.75'.
 
-Linux-6.8.0-48-generic-x86_64-with-glibc2.39 x86_64
+macOS-15.1-arm64-arm-64bit arm64
 Ren'Py 8.3.2.24090902
 The Invisible Problem 0.9_beta
-Tue Nov  5 01:47:37 2024
+Tue Nov  5 14:30:15 2024
