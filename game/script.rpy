@@ -115,28 +115,34 @@ menu ifreadArticle:
 
 
 label readArticle:
-    #TODO: something to do with 'original language' things
+
+    scene data paper
+
+    p "This picture is cited from another research published on Environmental Technology &amp; Innovation,..."
+
+    p "...according to which there is considerable amount of alcohols, esters, aldehydes-ketones in the..." 
+
+    p "...emissions of organic waste. And 'ethanol was the primary\ compound with the maximum concentration of 825 mg/N per m3'"
+
+    p "The ethanol was particularly worrying because according to a research published on Critical Reviews in Toxicology,..."
+
+    p "...'Ethanol can lead to malnutritionand can exert a direct toxicological effect\ due to its interference with hepatic..."
+
+    p "...metabolism and immunological functions.'(Ahmed, Farid E,1995)"
+
     scene abstract paper
 
-    p "This is the abstract of the article by\ Paulina Rudziak, Evans Batung and Isaac Luginaah..."
+    p "According to an article on this issue by\ Paulina,Rudziak, Evans Batung and Isaac Luginaah published PLOS ONE,..."
 
-    p "...published PLOS ONE."
+    p "...they examined data from 32 different communities\ across 12 countries, and found that..."
 
-    p "It focuses on the respiratory issues and psychological\ effects caused by organic waste odors."
+    p "...'The evidence provided here shows a positive linkage\ between food waste emissions and both direct and indirect human health impacts.'"
 
-    p "The study examined data from 32 different communities\ across 12 countries, and here are their findings:"
+    p "This article also mentioned that\ 'the emissions of food waste, such as ammonia gas, ..."
 
-    p "First, there is a positive connection between organic\ waste emissions and the damage of human health..."
+    p "...have social health costs in addition to environmental health and human physiological health'"
 
-    p "...both directly and indirectly."
-
-    p "For example, the Ammonia in the emissions will not only cause\ Lung irritation..."
-
-    p "...and the damage of olfactory cells\ (Which weakens your ability to smell things), but also it will..." 
-
-    p "...cause indirect harm like soil and water body acidifiction in our campus."
-
-    p "Second, from a psychological point of view,\ many have reported that to expose to these emissions..."
+    p "And from a psychological point of view,\ many have reported that to expose to these emissions..."
 
     p "...causes eye irritation and sensory adaptation issues."
 

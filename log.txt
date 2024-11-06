@@ -1,10 +1,10 @@
-2024-11-06 12:51:11 UTC
+2024-11-06 14:00:17 UTC
 macOS-15.1-arm64-arm-64bit
 Ren'Py 8.3.2.24090902
 
 Early init took 0.03s
 Loading error handling took 0.02s
-Loading script took 0.08s
+Loading script took 0.09s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.02s
@@ -29,7 +29,7 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.34s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
@@ -39,20 +39,12 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M2'
 Version: b'2.1 Metal - 89.3'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1338, 753) drawable=(2676, 1506)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1358, 755) drawable=(2716, 1510)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1417, 761) drawable=(2834, 1522)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1423, 761) drawable=(2846, 1522)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1424, 761) drawable=(2848, 1522)
+Screen sizes: virtual=(1920, 1080) physical=(1353, 761) drawable=(2706, 1522)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
