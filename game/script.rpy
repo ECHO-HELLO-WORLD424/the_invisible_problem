@@ -11,6 +11,8 @@ define p = Character("Patrick")
 
 label start:
 
+    scene bg room
+
     "Do you want to see my thesis first?"
 
 
@@ -44,8 +46,6 @@ label intro:
     p "Let me show you what is happening right now around us\ in an obvious corner..."
 
     p "...yet an invisible one."
-
-    #TODO: picture of uncleaned corridor
 
     scene uncleaned corridor
 
@@ -81,7 +81,7 @@ menu ifserious:
 
 label seriousFalse:
 
-    scene cover paper
+    scene abstract paper
 
     p "You may argue that such smells is just nasty, not really harmful."
 
@@ -92,7 +92,7 @@ label seriousFalse:
 
 label seriousTrue:
 
-    scene cover paper
+    scene abstract paper
 
     p "You are absolutely right! Insignificant as it might seems\ at your first glance..."
 
@@ -180,6 +180,8 @@ menu chooseSolution:
 
 label solution0:
 
+    scene clean dustbin
+
     p "This is a 'simple' solution..."
 
     p "...yet an impractical one. The reasons are as follow:"
@@ -206,6 +208,8 @@ label solution0:
 
     
 label solution1:
+
+    scene big dustbin
 
     p "This one sounds better than the previous solution..."
 
@@ -259,7 +263,7 @@ label solution2:
 label thesis:
     #TODO: a picture of RC-101 here.
 
-    scene RC 101
+    scene sd un
 
     p "OK here we are."
 

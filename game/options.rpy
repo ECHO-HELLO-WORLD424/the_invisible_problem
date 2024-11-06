@@ -150,7 +150,7 @@ define config.save_directory = "TheInvisibleProblem-1730378088"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/jill sad.png"
+define config.window_icon = "gui/window_icon.png"
 
 
 ## Build configuration #########################################################
