@@ -13,7 +13,7 @@ label start:
 
     scene bg room
 
-    "Do you want to see my thesis first?"
+    "Do you want to see my thesis & exigency first?"
 
 
 menu ifSeeThesis:
@@ -243,7 +243,7 @@ label solution2:
 
     scene recycle spot
 
-    p "Fro my point of view, this is the best solution!"
+    p "From my point of view, this is the best solution!"
 
     p "To put this solution into action takes much efforts, time and money..."
 
@@ -272,6 +272,14 @@ label thesis:
     scene sd un
 
     p "OK here we are."
+
+    p "I know that an environment-protection fanscinated student like you..."
+
+    p "...will do something to solve this problem."
+
+    p "By doing so, not only will we get a residential college free from nasty smell..."
+
+    p "...but also we can inspire others to take action to find and\ solve more invisible problems like this one."
 
     p "We should now have a face to face discussion with Students' union of our College..."
 
