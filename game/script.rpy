@@ -1,6 +1,7 @@
 ﻿# The script of the game goes in this file.
 
 # Cited URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10971579/
+#TODO: https://pmc.ncbi.nlm.nih.gov/articles/PMC8470184/ (NEW!!!)
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -75,9 +76,11 @@ label intro:
 
     "...which will certainly makes our RC a better place to live in."
 
+    n "But..."
+
 menu ifserious:
 
-    "Can some terrible smell possibly do any serious harm?"
+    n "...Can some terrible smell possibly do any serious harm?"
 
     "Of course! It's worrying,":
         
@@ -129,17 +132,31 @@ label readArticle:
 
     scene data paper with fade
 
-    p "This picture is cited from another research published on Environmental Technology &amp; Innovation,..."
+    p "This picture is cited from a research published on Environmental Technology &amp; Innovation."
 
-    p "...according to which there is considerable amount of alcohols, esters, aldehydes-ketones in the..." 
+    "It focuses on the emission produced by house-hold organic waste and their harms,..."
 
-    p "...emissions of organic waste. And 'ethanol was the primary\ compound with the maximum concentration of 825 mg/N per m3'"
+    "...and I think it can help us figure out what is going on in our hallway since the situation is basically the same:"
 
-    p "The ethanol was particularly worrying because according to a research published on Critical Reviews in Toxicology,..."
+    "(The research focuses on the organic waste emissions in enclosed space ('house-hold')\ and our hallway can also be considered as an enclosed space with organic waste emission.)"
 
-    p "...'Ethanol can lead to malnutritionand can exert a direct toxicological effect\ due to its interference with hepatic..."
+    "According to the research, when food and organic waste, just like these ones in the carpel boxes, breaks down,..." 
 
-    p "...metabolism and immunological functions.'(Ahmed, Farid E,1995)"
+    "...it realeases various kinds of chemicals into the air."
+
+    "The most common chemical released is ethanol (alcohol)."
+
+    scene figure4 article
+    # TODO: figure 4 of this article here
+
+    "Harmless as it might be at your first glance, there is strong relationship"
+
+    " between daily exposure to alcohol and increased possibility of getting cancer."
+
+    "This picture discribes the risk for cancer at different sites..."
+
+    "...for a person exposuring himself in alcohol everyday."
+
 
     scene abstract paper with fade
 
@@ -147,22 +164,15 @@ label readArticle:
 
     p "...they examined data from 32 different communities\ across 12 countries, and found that..."
 
-    p "...'The evidence provided here shows a positive linkage\ between food waste emissions and both direct and indirect human health impacts.'"
+    "...people have reported that emissions from organic waste makes their eyes itch."
 
-    p "This article also mentioned that\ 'the emissions of food waste, such as ammonia gas, ..."
+    "What makes it worse is that after living in the RC and being around these smells for a while,..."
 
-    p "...have social health costs in addition to environmental health and human physiological health'"
+    "...our nose tends to adapt to the smell and 'forget' about it, leaving our body still being affected!"
 
-    p "And from a psychological point of view,\ many have reported that to expose to these emissions..."
+    "Last but not the least, being around these smell for a long time can increase our stress level,..."
 
-    p "...causes eye irritation and sensory adaptation issues."
-
-    p "Last but not the least, from a long-term point of view,\ thses odors elevated stress hormones..."
-
-    p "...in long-term exposed individuals,\ which is the least thing we want to see..."
-
-    p "...on a stressful university student with tight time scheduals"
-
+    "This is definitely not something we want to see happening on students dealing with approaching deadlines."
 
 label possibleSolution:
 
@@ -172,7 +182,7 @@ label possibleSolution:
 
     p "So we may agree that immeadiate action should be taken."
 
-    p "Here are some possible solutions, but are they practical or even make sense after all?"
+    p "Previously I proposed a recycle based solution, any other ideas?"
 
 
 menu chooseSolution:
@@ -189,7 +199,7 @@ menu chooseSolution:
         $ choose = 1
         jump solution1
 
-    "Why not set up some recycling points in the residential college\ so that no more cardboard paper boxes will end up being placed around the dustbin?":
+    "I agree that we should set up some recycling points in the residential college\ so that no more cardboard paper boxes will end up being placed around the dustbin?":
 
         $ choose = 2
         jump solution2  
@@ -232,6 +242,8 @@ label solution1:
 
     p "...but is not good enough as well. The reasons are as follow:"
 
+    "First, this won't solve the organic emission issue."
+
     p "Assuming that you have successfully persuade\ the students'union of the residential college into..."
 
     p "...replace present dustbins with larger one.\ what will happen next?"
@@ -241,6 +253,10 @@ label solution1:
     p "But we should keep in mind that the population\ of our college is growing as time goes by."
 
     p "More students wtll take in more paper boxes, large dustbins are needed to contain these boxes..."
+
+    "Someday the dustbin can't contain more trash and some carpel boxes will still..."
+
+    "...end up around the dustbin, not in them."
 
     p "You see? This is a dead end. We can't solve more with more, we need to solve more with less."
 
@@ -254,7 +270,7 @@ label solution2:
 
     scene recycle spot
 
-    p "From my point of view, this is the best solution!"
+    p "Now we are speaking the same language!"
 
     "Right now there are only one recycle spot in the campus,\ which is the one in the postal service center."
 
@@ -274,7 +290,9 @@ label solution2:
 
     p "But it's worthwhile! Let me further explain\ the advantages of this solution over other ones to you."
 
-    p "If you have already went through the first solution,\ you will know that students takes back large carpboard..."
+    "First, no more organic emissions will be generated\ since there will be no chance to throw organic waste in the carpel boxes!"
+
+    p "Plus, If you have already went through the first solution,\ you will know that students takes back large carpboard..."
 
     p "...because content inside the package is too large or heavy\ to be carried by bare hand..."
 
@@ -322,4 +340,7 @@ label thesis:
 
     p "On the other hand, if they choose to solve this problem, they\ will manage to do something and gain a good reputation!"
 
+
+label citation:
+    #TODO: Copy the citation part of supplement to here.
     return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1: expected statement.
-    
-    ^
+File "game/script.rpy", line 192: Say menuitems and captions may not exist in the same menu.
+    n "Why not tell everyone that they should't place their cardboard paper boxes ramdonly?":
+                                                                                            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Nov  5 01:44:27 2024
+Tue Nov 19 00:20:48 2024
