@@ -5,8 +5,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define n = Character("Nie")
-define p = Character("Patrick")
+define n = Character("")
+define p = Character("")
 # The game starts here.
 
 label start:
@@ -61,8 +61,19 @@ label intro:
 
     p "...produces terrible smell before they get cleaned."
 
-    p "Now, do you think this will be a serious problem?"
+    "I knew that you are happier if everything is tidy and clean, and you are keen on enviroment protection."
 
+    "So surely you will want to take action to get rid of this problem."
+
+    "Given that you have rich experience negotiating with others and managed to persuade\ the students' union into doing something beneficial in high school,"
+
+    p "I suggest that we should have a face to face discussion with\ Students' union of our College and persuade them into setting up a recycling spots in the RC..."
+
+    p "...just like the one in the postal service center, in which large carpel\ boxes can be gathered, compressed and recycled."
+
+    "So that no more empty carpel boxes will lie around the public area of our college,\ containing organic waste that gives off nasty smells,..."
+
+    "...which will certainly makes our RC a better place to live in."
 
 menu ifserious:
 
@@ -81,7 +92,7 @@ menu ifserious:
 
 label seriousFalse:
 
-    scene abstract paper
+    scene abstract paper with fade
 
     p "You may argue that such smells is just nasty, not really harmful."
 
@@ -92,7 +103,7 @@ label seriousFalse:
 
 label seriousTrue:
 
-    scene abstract paper
+    scene abstract paper with fade
 
     p "You are absolutely right! Insignificant as it might seems\ at your first glance..."
 
@@ -116,7 +127,7 @@ menu ifreadArticle:
 
 label readArticle:
 
-    scene data paper
+    scene data paper with fade
 
     p "This picture is cited from another research published on Environmental Technology &amp; Innovation,..."
 
@@ -130,7 +141,7 @@ label readArticle:
 
     p "...metabolism and immunological functions.'(Ahmed, Farid E,1995)"
 
-    scene abstract paper
+    scene abstract paper with fade
 
     p "According to an article on this issue by\ Paulina,Rudziak, Evans Batung and Isaac Luginaah published PLOS ONE,..."
 
@@ -155,7 +166,7 @@ label readArticle:
 
 label possibleSolution:
 
-    scene uncleaned corridor
+    scene uncleaned corridor with fade
 
     p "As a conclusion, these odours does no good to the residents of our college."
 
@@ -204,7 +215,7 @@ label solution0:
 
     p "Even if they choose not to throw then in the college..."
 
-    p "...these paper boxes will eventually end up somewher\ out of the residential college but still in this campus."
+    p "...these paper boxes will eventually end up somewhere\ out of the residential college but still in this campus."
 
     p "You see? This solution transfers the problem to somewhere outside the residential college..."
 
@@ -245,9 +256,23 @@ label solution2:
 
     p "From my point of view, this is the best solution!"
 
+    "Right now there are only one recycle spot in the campus,\ which is the one in the postal service center."
+
+    "We can't expect everyone to bring their trush to the spot,\ so we bring the spot ot them."
+
+# TODO: a picture of empty discussion room here
+
+    scene empty discussionroom
+
+    "To be more specific, you can see that some of the discussion rooms of our RC are always available..."
+
+    "...maybe it's possible for us to turn it into a recycle spot, just like the one in the postal service center."
+
+    "We can 'hire' some volunteers within the RC or from the eco club and ask them to flatten the boxes on a regular basis."
+
     p "To put this solution into action takes much efforts, time and money..."
 
-    p "But it's worhtwhile! Let me further explain\ the advantages of this solution over other ones to you."
+    p "But it's worthwhile! Let me further explain\ the advantages of this solution over other ones to you."
 
     p "If you have already went through the first solution,\ you will know that students takes back large carpboard..."
 
@@ -267,7 +292,7 @@ label solution2:
 
 
 label thesis:
-    #TODO: a picture of RC-101 here.
+    #TODO: replace the picture here.
 
     scene sd un
 
