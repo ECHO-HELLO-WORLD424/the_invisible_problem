@@ -225,6 +225,7 @@ menu chooseSolution:
         $ choose = 2
         jump solution2  
 
+
 label solution0:
 
     scene clean dustbin at proper_fit with fade
@@ -284,6 +285,7 @@ label solution1:
 
     jump chooseSolution
 
+
 label solution2:
 # TODO: a picture of recycle spot in the postal service center
 
@@ -327,6 +329,7 @@ label solution2:
 
     jump thesis
 
+
 label thesis:
     #TODO: replace the picture here.
 
@@ -358,6 +361,7 @@ label thesis:
 
     p "On the other hand, if they choose to solve this problem, they\ will manage to do something and gain a good reputation!"
 
+
 label citation:
 
     scene end
@@ -387,7 +391,5 @@ label citation:
     "Critical Reviews in Toxicology 25 (4): 347–67. 25 Sep 2008;"
 
     "https://doi:10.3109/10408449509021614."
-
-
 
     return
